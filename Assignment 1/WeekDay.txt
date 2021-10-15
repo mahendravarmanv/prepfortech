@@ -1,0 +1,30 @@
+function weekDay(n){
+    if(n < 1 && n > 7){
+        return "Invalid"
+    }
+    switch(n){
+        case 1:return "Sunday";
+        case 2:return "Monday";
+        case 3:return "Tuesday";
+        case 4:return "Wednesday";
+        case 5:return "Thursday";
+        case 6:return "Friday";
+        case 7:return "Saturday";
+    }
+} 
+
+
+function weekDay(n){
+    if(n < 1 && n > 7){
+        return "Invalid"
+    }
+    else if(n == 1) return "Sunday";
+    else if(n == 2)return "Monday";
+    else if(n == 3)return "Tuesday";
+    else if(n == 4)return "Wednesday";
+    else if(n == 5)return "Thursday";
+    else if(n == 6)return "Friday";
+    else return "Saturday";
+    
+}
+                                                                                                                                                                                                                                                                                                         

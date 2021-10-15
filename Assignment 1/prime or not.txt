@@ -1,0 +1,8 @@
+function prime(n){
+    for(var i = 0;i*i<=n;i++){
+        if(n%2 == 0){
+            return "Not Prime";
+        }
+    }
+return "Prime"   
+}

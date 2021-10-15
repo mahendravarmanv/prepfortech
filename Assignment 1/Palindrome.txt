@@ -1,0 +1,9 @@
+function palindrome(s1){
+    for(var i=0;i< s1.length/2;i++){
+		if(s1[i] != s1[s1.length - i - 1]){
+		    return false;
+		}
+	}
+	return true;
+}
+console.log(palindrome("1231"))

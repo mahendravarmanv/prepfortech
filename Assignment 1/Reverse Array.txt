@@ -1,0 +1,12 @@
+var arr1 = new Array(1 , 2 , 3 , 5 , 8 , 4 , 7);
+function reverse(){
+    var left = 0;
+    var right = arr1.length;
+    while(left <= right){
+		var temp = arr1[left];
+		arr1[left] = arr1[right]
+		arr1[right] = temp;
+		left++;
+		right--;
+	}
+}

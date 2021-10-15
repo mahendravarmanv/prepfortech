@@ -1,0 +1,9 @@
+var arr1 = new Array(1 , 2 , 3 , 5 , 8 , 4 , 7);
+function search(n){
+    for(var i = 0;i<arr1.length;i++){
+        if(arr1[i] == n){
+            return "Element Found";
+        }
+    }
+return "Element Not Found"   
+}
