@@ -1,0 +1,71 @@
+1. function palindrome(string){
+    var low = 0;
+    var high = string.length - 1;
+    while(low < high){
+        if(string[low] != string[high]){
+            return false;
+        }
+        low++;
+        high--;
+    }
+    return true;
+}
+palindrome("abcd")
+
+2.function wordCount(string){
+    var count = 0;
+    for(var i = 0;i < string.length;i++){
+        if(string[i] === " "){
+            count++;
+        }
+    }
+    return count+1;
+}
+
+4.function checkNumber(num){
+   switch(num){
+       case 1: return "Positive"
+       case 0: if(num < 0){
+               return "Negative"
+             }else{
+                return "Zero"
+        }
+    }
+}
+
+
+5.function oddEven(num){
+   if(num%2)return "Odd"
+   else return "Even"
+}
+
+6.function oddEven(num){
+  switch(num%2){
+      case 0:return "Even"
+      case 1:return "Odd"
+    }
+}
+oddEven(10)
+
+7.function reverseWord(str){
+    var words = [];
+    words = str.match(/\S+/g);
+    var result = "";
+  for (var i = 0; i < words.length; i++) {
+     result += words[i].split('').reverse().join('') + " ";
+  }
+  return result
+   
+}
+reverseWord("hello world")
+
+8.function countOcc(str , letter){
+  var count = 0;
+  for (var i = 0; i < str.length; i++) {
+        if(str[i] === letter){
+            count = count + 1
+        }
+  }
+  return count
+   
+}
