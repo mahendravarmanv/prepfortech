@@ -1,0 +1,21 @@
+function patt(n){
+    let str = ''
+    let count = 0
+    for(let i = n-1;i>=0;i--){
+        for(let j = i;j>=0;j--){
+            str +=  '*'
+        }
+        for(let k = i;k<=n;k++){
+            str +=  ' ';
+        }
+        for(let j = i;j<n;j++){
+            str +=  ' '
+        }
+        for(let k = i;k>=0;k--){
+            str +=  '*';
+        }
+        str += '\n'
+    }
+    return str;
+}
+console.log(patt(4))
