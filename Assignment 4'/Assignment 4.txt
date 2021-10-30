@@ -1,0 +1,37 @@
+function patt(n){
+    let str = ''
+    for(let i = 1;i<=n;i++){
+        for(let j = 1;j<=n-i;j++){
+            str += ' ';
+        }
+        for(let j = 1;j<=i;j++){
+            str += j;
+        }
+        for(let j = i-1;j>=1;j--){
+            str += j;
+        }
+        str += '\n'
+    }
+    return str;
+}
+patt(5)
+
+function patt(n){
+    let str = ''
+    let val = 1
+    for(let i = 0;i<n;i++){
+        for(let j = 1;j<=n-i;j++){
+            str += ' ';
+        }
+        for(let j = 0;j<=i;j++){
+            if(j == 0 || i == 0)
+                val = 1
+            else
+                val = val * (i-j+1)/j
+            str += val
+        }
+        str += '\n'
+    }
+    return str;
+}
+console.log(patt(5))
